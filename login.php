@@ -35,7 +35,7 @@ include('./config.php');
                         if(password_verify($password,$user["password"])){
                             session_start();
                             $_SESSION["user"] = "yes";
-                            header("Location: create.php");
+                            header("Location: index.php");
                             die();
                         }else{
                             echo "<div class='alert alert-danger'>Parol noto'g'ri</div>";
