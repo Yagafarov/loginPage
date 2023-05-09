@@ -70,9 +70,8 @@
                     </div>
                     <div class="card-body">
                         <?php
-                            if(isset([$_GET['id']])){
-                                echo "<div class='alert alert-danger'>'$_GET['id']'</div>";
-                            }
+                            $sum = "anodra";    
+                            echo "<div class='alert alert-danger'>".$_GET['id']."</div>";                            
                         ?>
                         <form action="create.php" method="post">
                             <div class="row px-sm-5">
